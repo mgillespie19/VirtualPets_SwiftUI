@@ -10,14 +10,12 @@ import Foundation
 import UIKit
 import SwiftUI
 
-class Pet {
+class Pet: Identifiable {
     var happiness: Int
     var foodLevel: Int
     var type: Animal
     var image: UIImage
     var background: Color
-    
-    let maxScore = 10
     
     enum Animal {
         case dog
@@ -26,22 +24,9 @@ class Pet {
         case fish
     }
     
-    // Functions
-    func play() {
-        if (foodLevel > 0 && happiness < 10) {
-            happiness += 1
-            foodLevel -= 1
-        }
-    }
-    
-    func feed() {
-        if (foodLevel < 10) {
-            foodLevel += 1
-        }
-    }
-    
     // Init
     init(happinessLevel: Int = 0, foodLevel: Int = 0, type:Animal = .dog) {
+        print("init called for pet")
         self.happiness = happinessLevel
         self.foodLevel = happinessLevel
         self.type = type
@@ -60,6 +45,23 @@ class Pet {
             image = UIImage(named: "Fish")!
             background = Color(red: 0.99, green: 0.77, blue: 1)
         }
+    }
+    
+    // Functions
+    func play() {
+        if (foodLevel > 0 && happiness < 10) {
+            happiness += 1
+            foodLevel -= 1
+        }
+    }
+    
+    func feed() {
+        print("feed called! \(foodLevel)")
+        if (foodLevel < 10) {
+            foodLevel += 1
+            print("inside if \(foodLevel)")
+        }
+        print("new food level: \(foodLevel)")
     }
 }
 

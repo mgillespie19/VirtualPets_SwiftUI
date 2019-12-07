@@ -9,36 +9,39 @@
 import SwiftUI
 
 struct PetInfo: View {
+    @ObservedObject var viewModel: PetViewModel
+    
     var screenHeight = UIScreen.main.bounds.height
     var barWidth = UIScreen.main.bounds.width * 0.9
-    @State var pct: CGFloat = 0
-    @State var feedPct: CGFloat = 0
-    @State var playPct: CGFloat = 0
+    
+    @State var foodPct: CGFloat = 0
+    @State var happinessPct: CGFloat = 0
     
     var body: some View {
         ZStack (alignment: .top) {
             Rectangle()
-                .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                .foregroundColor(viewModel.selectedPet.background)
                 .frame(height: screenHeight / 2)
                 .edgesIgnoringSafeArea(.top)
             
             VStack {
                 Spacer()
                 VStack {
-                    ProgressBar(barWidth: self.barWidth, barHeight: 50, barPct: pct)
+                    ProgressBar(barWidth: self.barWidth, barHeight: 50, barPct: $happinessPct)
                         .padding(.bottom)
                     
-                    Image("Dog")
+                    Image(uiImage: viewModel.selectedPet.image)
                         .resizable()
                         .frame(width: 120, height: 120)
                 }
                 
                 Spacer()
                 
-                ProgressBar(barWidth: self.barWidth, barHeight: 25, barPct: feedPct)
+                ProgressBar(barWidth: self.barWidth, barHeight: 25, barPct: $foodPct)
                     .padding(.top)
                 Button(action: {
-                    print("feed")
+                    self.viewModel.feed()
+                    self.updatePercents()
                 }, label: {
                     Text("Feed")
                         .frame(width: barWidth, height: 50)
@@ -46,11 +49,12 @@ struct PetInfo: View {
                         .cornerRadius(4)
                         .shadow(radius: 2)
                 })
-                
-                ProgressBar(barWidth: self.barWidth, barHeight: 25, barPct: feedPct)
-                    .padding(.top)
+
+                Spacer()
+
                 Button(action: {
-                    print("play")
+                    self.viewModel.play()
+                    self.updatePercents()
                 }, label: {
                     Text("Play")
                         .frame(width: barWidth, height: 50)
@@ -96,10 +100,15 @@ struct PetInfo: View {
             }
         }
     }
+    
+    private func updatePercents() {
+        self.foodPct = CGFloat(self.viewModel.selectedPet.foodLevel) / 10
+        self.happinessPct = CGFloat(self.viewModel.selectedPet.happiness) / 10
+    }
 }
 
 struct PetInfo_Previews: PreviewProvider {
     static var previews: some View {
-        PetInfo()
+        PetInfo(viewModel: PetViewModel())
     }
 }

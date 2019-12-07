@@ -11,7 +11,7 @@ import SwiftUI
 struct ProgressBar: View {
     var barWidth: CGFloat
     var barHeight: CGFloat
-    var barPct: CGFloat
+    @Binding var barPct: CGFloat
     
     var body: some View {
         ZStack (alignment: .leading) {
@@ -29,7 +29,9 @@ struct ProgressBar: View {
 }
 
 struct ProgressBar_Previews: PreviewProvider {
+    @State static var pct: CGFloat = 0
+    
     static var previews: some View {
-        ProgressBar(barWidth: 380, barHeight: 40, barPct: 0.0)
+        ProgressBar(barWidth: 380, barHeight: 40, barPct: $pct)
     }
 }

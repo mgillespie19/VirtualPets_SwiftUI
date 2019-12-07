@@ -12,7 +12,7 @@ struct PetView: View {
     
     var body: some View {
         VStack {
-            PetInfo()
+            PetInfo(viewModel: PetViewModel())
         }
     }
 }
