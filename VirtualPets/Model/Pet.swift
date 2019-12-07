@@ -8,13 +8,16 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class Pet {
     var happiness: Int
     var foodLevel: Int
     var type: Animal
     var image: UIImage
-    var background: UIColor
+    var background: Color
+    
+    let maxScore = 10
     
     enum Animal {
         case dog
@@ -24,14 +27,13 @@ class Pet {
     }
     
     // Functions
-    func play() -> Bool {
+    func play() {
         if (foodLevel > 0 && happiness < 10) {
             happiness += 1
             foodLevel -= 1
-            return true
         }
-        return false
     }
+    
     func feed() {
         if (foodLevel < 10) {
             foodLevel += 1
@@ -39,24 +41,24 @@ class Pet {
     }
     
     // Init
-    init(h:Int = 0, f:Int = 0, type:Animal = .dog) {
-        self.happiness = h
-        self.foodLevel = f
+    init(happinessLevel: Int = 0, foodLevel: Int = 0, type:Animal = .dog) {
+        self.happiness = happinessLevel
+        self.foodLevel = happinessLevel
         self.type = type
         
         switch type {
         case .dog:
             image = UIImage(named: "Dog")!
-            background = UIColor(red: 1, green: 0.46, blue: 0.46, alpha: 1)
+            background = Color(red: 1, green: 0.46, blue: 0.46)
         case .cat:
             image = UIImage(named: "Cat")!
-            background = UIColor(red: 0.57, green: 0.76, blue: 1, alpha: 1)
+            background = Color(red: 0.57, green: 0.76, blue: 1)
         case .parrot:
             image = UIImage(named: "Bird")!
-            background = UIColor(red: 1, green: 1, blue: 0.65, alpha: 1)
+            background = Color(red: 1, green: 1, blue: 0.65)
         case .fish:
             image = UIImage(named: "Fish")!
-            background = UIColor(red: 0.99, green: 0.77, blue: 1, alpha: 1)
+            background = Color(red: 0.99, green: 0.77, blue: 1)
         }
     }
 }
