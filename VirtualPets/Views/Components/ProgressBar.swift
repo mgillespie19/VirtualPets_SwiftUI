@@ -24,6 +24,7 @@ struct ProgressBar: View {
                 .foregroundColor(.black)
                 .frame(width: (barWidth * barPct), height: barHeight)
                 .padding()
+                .animation(.easeInOut)
         }
     }
 }
