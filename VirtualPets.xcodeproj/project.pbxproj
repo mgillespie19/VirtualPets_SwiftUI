@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F62D3802239B5ADF0026C844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D3801239B5ADF0026C844 /* AppDelegate.swift */; };
+		F62D3804239B5ADF0026C844 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D3803239B5ADF0026C844 /* SceneDelegate.swift */; };
+		F62D3807239B5ADF0026C844 /* VirtualPets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F62D3805239B5ADF0026C844 /* VirtualPets.xcdatamodeld */; };
+		F62D3809239B5ADF0026C844 /* PetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D3808239B5ADF0026C844 /* PetView.swift */; };
+		F62D380B239B5AE20026C844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62D380A239B5AE20026C844 /* Assets.xcassets */; };
+		F62D380E239B5AE20026C844 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62D380D239B5AE20026C844 /* Preview Assets.xcassets */; };
+		F62D3811239B5AE20026C844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62D380F239B5AE20026C844 /* LaunchScreen.storyboard */; };
+		F62D381C239B5AE20026C844 /* VirtualPetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D381B239B5AE20026C844 /* VirtualPetsTests.swift */; };
+		F62D3827239B5AE20026C844 /* VirtualPetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62D3826239B5AE20026C844 /* VirtualPetsUITests.swift */; };
+		F6F89951239C03E000C1DE4E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F89950239C03E000C1DE4E /* ProgressBar.swift */; };
+		F6F89954239C0DDB00C1DE4E /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F89953239C0DDB00C1DE4E /* Pet.swift */; };
+		F6FFCCC5239B653E00549C3C /* PetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FFCCC4239B653E00549C3C /* PetInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F62D3818239B5AE20026C844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F62D37F6239B5ADF0026C844 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F62D37FD239B5ADF0026C844;
+			remoteInfo = VirtualPets;
+		};
+		F62D3823239B5AE20026C844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F62D37F6239B5ADF0026C844 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F62D37FD239B5ADF0026C844;
+			remoteInfo = VirtualPets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F62D37FE239B5ADF0026C844 /* VirtualPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62D3801239B5ADF0026C844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F62D3803239B5ADF0026C844 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F62D3806239B5ADF0026C844 /* VirtualPets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirtualPets.xcdatamodel; sourceTree = "<group>"; };
+		F62D3808239B5ADF0026C844 /* PetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetView.swift; sourceTree = "<group>"; };
+		F62D380A239B5AE20026C844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F62D380D239B5AE20026C844 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F62D3810239B5AE20026C844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F62D3812239B5AE20026C844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62D3817239B5AE20026C844 /* VirtualPetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualPetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62D381B239B5AE20026C844 /* VirtualPetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPetsTests.swift; sourceTree = "<group>"; };
+		F62D381D239B5AE20026C844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62D3822239B5AE20026C844 /* VirtualPetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualPetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62D3826239B5AE20026C844 /* VirtualPetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPetsUITests.swift; sourceTree = "<group>"; };
+		F62D3828239B5AE20026C844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F89950239C03E000C1DE4E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		F6F89953239C0DDB00C1DE4E /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		F6FFCCC4239B653E00549C3C /* PetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F62D37FB239B5ADF0026C844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D3814239B5AE20026C844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D381F239B5AE20026C844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F62D37F5239B5ADF0026C844 = {
+			isa = PBXGroup;
+			children = (
+				F62D3800239B5ADF0026C844 /* VirtualPets */,
+				F62D381A239B5AE20026C844 /* VirtualPetsTests */,
+				F62D3825239B5AE20026C844 /* VirtualPetsUITests */,
+				F62D37FF239B5ADF0026C844 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F62D37FF239B5ADF0026C844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F62D37FE239B5ADF0026C844 /* VirtualPets.app */,
+				F62D3817239B5AE20026C844 /* VirtualPetsTests.xctest */,
+				F62D3822239B5AE20026C844 /* VirtualPetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F62D3800239B5ADF0026C844 /* VirtualPets */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCCC3239B652D00549C3C /* Views */,
+				F6F89952239C0DCE00C1DE4E /* Model */,
+				F62D3801239B5ADF0026C844 /* AppDelegate.swift */,
+				F62D3803239B5ADF0026C844 /* SceneDelegate.swift */,
+				F62D3808239B5ADF0026C844 /* PetView.swift */,
+				F62D380A239B5AE20026C844 /* Assets.xcassets */,
+				F62D380F239B5AE20026C844 /* LaunchScreen.storyboard */,
+				F62D3812239B5AE20026C844 /* Info.plist */,
+				F62D3805239B5ADF0026C844 /* VirtualPets.xcdatamodeld */,
+				F62D380C239B5AE20026C844 /* Preview Content */,
+			);
+			path = VirtualPets;
+			sourceTree = "<group>";
+		};
+		F62D380C239B5AE20026C844 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F62D380D239B5AE20026C844 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F62D381A239B5AE20026C844 /* VirtualPetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F62D381B239B5AE20026C844 /* VirtualPetsTests.swift */,
+				F62D381D239B5AE20026C844 /* Info.plist */,
+			);
+			path = VirtualPetsTests;
+			sourceTree = "<group>";
+		};
+		F62D3825239B5AE20026C844 /* VirtualPetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F62D3826239B5AE20026C844 /* VirtualPetsUITests.swift */,
+				F62D3828239B5AE20026C844 /* Info.plist */,
+			);
+			path = VirtualPetsUITests;
+			sourceTree = "<group>";
+		};
+		F6F8994F239C039A00C1DE4E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F6F89950239C03E000C1DE4E /* ProgressBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F6F89952239C0DCE00C1DE4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6F89953239C0DDB00C1DE4E /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6FFCCC3239B652D00549C3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6FFCCC4239B653E00549C3C /* PetInfo.swift */,
+				F6F8994F239C039A00C1DE4E /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F62D37FD239B5ADF0026C844 /* VirtualPets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F62D382B239B5AE20026C844 /* Build configuration list for PBXNativeTarget "VirtualPets" */;
+			buildPhases = (
+				F62D37FA239B5ADF0026C844 /* Sources */,
+				F62D37FB239B5ADF0026C844 /* Frameworks */,
+				F62D37FC239B5ADF0026C844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualPets;
+			productName = VirtualPets;
+			productReference = F62D37FE239B5ADF0026C844 /* VirtualPets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F62D3816239B5AE20026C844 /* VirtualPetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F62D382E239B5AE20026C844 /* Build configuration list for PBXNativeTarget "VirtualPetsTests" */;
+			buildPhases = (
+				F62D3813239B5AE20026C844 /* Sources */,
+				F62D3814239B5AE20026C844 /* Frameworks */,
+				F62D3815239B5AE20026C844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F62D3819239B5AE20026C844 /* PBXTargetDependency */,
+			);
+			name = VirtualPetsTests;
+			productName = VirtualPetsTests;
+			productReference = F62D3817239B5AE20026C844 /* VirtualPetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F62D3821239B5AE20026C844 /* VirtualPetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F62D3831239B5AE20026C844 /* Build configuration list for PBXNativeTarget "VirtualPetsUITests" */;
+			buildPhases = (
+				F62D381E239B5AE20026C844 /* Sources */,
+				F62D381F239B5AE20026C844 /* Frameworks */,
+				F62D3820239B5AE20026C844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F62D3824239B5AE20026C844 /* PBXTargetDependency */,
+			);
+			name = VirtualPetsUITests;
+			productName = VirtualPetsUITests;
+			productReference = F62D3822239B5AE20026C844 /* VirtualPetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F62D37F6239B5ADF0026C844 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Max Gillespie";
+				TargetAttributes = {
+					F62D37FD239B5ADF0026C844 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F62D3816239B5AE20026C844 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F62D37FD239B5ADF0026C844;
+					};
+					F62D3821239B5AE20026C844 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F62D37FD239B5ADF0026C844;
+					};
+				};
+			};
+			buildConfigurationList = F62D37F9239B5ADF0026C844 /* Build configuration list for PBXProject "VirtualPets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F62D37F5239B5ADF0026C844;
+			productRefGroup = F62D37FF239B5ADF0026C844 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F62D37FD239B5ADF0026C844 /* VirtualPets */,
+				F62D3816239B5AE20026C844 /* VirtualPetsTests */,
+				F62D3821239B5AE20026C844 /* VirtualPetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F62D37FC239B5ADF0026C844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62D3811239B5AE20026C844 /* LaunchScreen.storyboard in Resources */,
+				F62D380E239B5AE20026C844 /* Preview Assets.xcassets in Resources */,
+				F62D380B239B5AE20026C844 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D3815239B5AE20026C844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D3820239B5AE20026C844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F62D37FA239B5ADF0026C844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6F89954239C0DDB00C1DE4E /* Pet.swift in Sources */,
+				F62D3802239B5ADF0026C844 /* AppDelegate.swift in Sources */,
+				F6FFCCC5239B653E00549C3C /* PetInfo.swift in Sources */,
+				F62D3804239B5ADF0026C844 /* SceneDelegate.swift in Sources */,
+				F62D3809239B5ADF0026C844 /* PetView.swift in Sources */,
+				F6F89951239C03E000C1DE4E /* ProgressBar.swift in Sources */,
+				F62D3807239B5ADF0026C844 /* VirtualPets.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D3813239B5AE20026C844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62D381C239B5AE20026C844 /* VirtualPetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F62D381E239B5AE20026C844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62D3827239B5AE20026C844 /* VirtualPetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F62D3819239B5AE20026C844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F62D37FD239B5ADF0026C844 /* VirtualPets */;
+			targetProxy = F62D3818239B5AE20026C844 /* PBXContainerItemProxy */;
+		};
+		F62D3824239B5AE20026C844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F62D37FD239B5ADF0026C844 /* VirtualPets */;
+			targetProxy = F62D3823239B5AE20026C844 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F62D380F239B5AE20026C844 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F62D3810239B5AE20026C844 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F62D3829239B5AE20026C844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F62D382A239B5AE20026C844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F62D382C239B5AE20026C844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VirtualPets/Preview Content\"";
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VirtualPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.VirtualPets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F62D382D239B5AE20026C844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VirtualPets/Preview Content\"";
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VirtualPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.VirtualPets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F62D382F239B5AE20026C844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = VirtualPetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.VirtualPetsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualPets.app/VirtualPets";
+			};
+			name = Debug;
+		};
+		F62D3830239B5AE20026C844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = VirtualPetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.VirtualPetsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VirtualPets.app/VirtualPets";
+			};
+			name = Release;
+		};
+		F62D3832239B5AE20026C844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = VirtualPetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.VirtualPetsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VirtualPets;
+			};
+			name = Debug;
+		};
+		F62D3833239B5AE20026C844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = VirtualPetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.VirtualPetsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VirtualPets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F62D37F9239B5ADF0026C844 /* Build configuration list for PBXProject "VirtualPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F62D3829239B5AE20026C844 /* Debug */,
+				F62D382A239B5AE20026C844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F62D382B239B5AE20026C844 /* Build configuration list for PBXNativeTarget "VirtualPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F62D382C239B5AE20026C844 /* Debug */,
+				F62D382D239B5AE20026C844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F62D382E239B5AE20026C844 /* Build configuration list for PBXNativeTarget "VirtualPetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F62D382F239B5AE20026C844 /* Debug */,
+				F62D3830239B5AE20026C844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F62D3831239B5AE20026C844 /* Build configuration list for PBXNativeTarget "VirtualPetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F62D3832239B5AE20026C844 /* Debug */,
+				F62D3833239B5AE20026C844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F62D3805239B5ADF0026C844 /* VirtualPets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F62D3806239B5ADF0026C844 /* VirtualPets.xcdatamodel */,
+			);
+			currentVersion = F62D3806239B5ADF0026C844 /* VirtualPets.xcdatamodel */;
+			path = VirtualPets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F62D37F6239B5ADF0026C844 /* Project object */;
+}
