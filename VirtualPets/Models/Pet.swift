@@ -56,12 +56,9 @@ class Pet: Identifiable {
     }
     
     func feed() {
-        print("feed called! \(foodLevel)")
         if (foodLevel < 10) {
             foodLevel += 1
-            print("inside if \(foodLevel)")
         }
-        print("new food level: \(foodLevel)")
     }
 }
 

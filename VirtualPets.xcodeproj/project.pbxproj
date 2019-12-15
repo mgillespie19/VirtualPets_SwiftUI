@@ -491,6 +491,7 @@
 				DEVELOPMENT_TEAM = Q7TC672PPY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VirtualPets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +512,7 @@
 				DEVELOPMENT_TEAM = Q7TC672PPY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VirtualPets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

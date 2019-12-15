@@ -20,8 +20,7 @@ class PetViewModel: ObservableObject {
     ]
     
     init() {
-//        selectedPet = pets["Dog"]!
-        selectedPet = Pet(happinessLevel: 0, foodLevel: 0, type: .cat)
+        selectedPet = pets["Dog"]!
     }
     
     func feed() {

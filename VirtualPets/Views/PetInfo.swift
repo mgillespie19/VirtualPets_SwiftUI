@@ -69,28 +69,32 @@ struct PetInfo: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        print("Dog")
+                        self.viewModel.changeSelection(key: "Dog")
+                        self.updatePercents()
                     }, label: {
                         Text("Dog")
                             .padding()
                     })
                     Spacer()
                     Button(action: {
-                        print("Cat")
+                        self.viewModel.changeSelection(key: "Cat")
+                        self.updatePercents()
                     }, label: {
                         Text("Cat")
                             .padding()
                     })
                     Spacer()
                     Button(action: {
-                        print("Parrot")
+                        self.viewModel.changeSelection(key: "Parrot")
+                        self.updatePercents()
                     }, label: {
                         Text("Parrot")
                             .padding()
                     })
                     Spacer()
                     Button(action: {
-                        print("Fish")
+                        self.viewModel.changeSelection(key: "Fish")
+                        self.updatePercents()
                     }, label: {
                         Text("Fish")
                             .padding()

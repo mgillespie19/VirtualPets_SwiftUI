@@ -11,9 +11,7 @@ import SwiftUI
 struct PetView: View {
     
     var body: some View {
-        VStack {
-            PetInfo(viewModel: PetViewModel())
-        }
+        PetInfo(viewModel: PetViewModel())
     }
 }
 
